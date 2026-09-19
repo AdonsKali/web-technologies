@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    background-color: #deb04f;
+    color: #1e1e1e;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;   
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #e67e22;
+    transition: width 0.3s;
+}
+
+.nav a:link {
+    color: #ffffff;
+}
+
+.nav a:visited {
+    color: #ffffff; 
+}
+
+.nav a:hover {
+    color: #e67e22;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav a:active {
+    color: yellow;
+}
+
+header {
+    text-align: center;
+}
+
+.static-h2 {
+    position: static;
+    font-weight: normal;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 20px;
+    text-align: left;
+}
+
+.img-box {
+    position: relative;  
+    display: inline-block;
+    margin: 20px;
+}
+
+.img-box img {
+    display: block;
+    border: 2px solid #1e1e1e;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 8px;
+}
+
+form input,
+form textarea {
+    display: block;
+    padding: 6px;
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #e67e22;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e67e22; 
+}
+
+form button:active {
+    background-color: #a85a10;
+}
+
+.city {
+    position: relative;  
+    background-color: #eeefb1;
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
