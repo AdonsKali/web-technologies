@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешественник — обо мне</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .projects {
+            column-count: 2;
+            column-gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#dashboard">Статистика</a>
+        <a href="#form">Контакты</a>
+        <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5" target="_blank" rel="noopener">Википедия</a>
+    </nav>
+
+    <header class="header">
+        <h1>Путешественник</h1>
+        <h2 class="static-h2">Деревянкин Ярослав Васильевич</h2>
+    </header>
+
+    <main class="main">
+
+        <section id="skills" class="skills-section">
+            <h3 class="section-title">Навыки</h3>
+
+            <div class="cards-row">
+
+                <article class="skill-card">
+                    <h4>Навигация</h4>
+                    <dl>
+                        <dt>Уровень</dt>
+                        <dd>90%</dd>
+                    </dl>
+                    <div class="progress" role="progressbar"
+                         aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h4>Языки</h4>
+                    <dl>
+                        <dt>Уровень</dt>
+                        <dd>75%</dd>
+                    </dl>
+                    <div class="progress" role="progressbar"
+                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h4>Фотография</h4>
+                    <dl>
+                        <dt>Уровень</dt>
+                        <dd>60%</dd>
+                    </dl>
+                    <div class="progress" role="progressbar"
+                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h4>Логистика</h4>
+                    <dl>
+                        <dt>Уровень</dt>
+                        <dd>85%</dd>
+                    </dl>
+                    <div class="progress" role="progressbar"
+                         aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h3 class="section-title">Проекты</h3>
+            <ol>
+                <li>Каракол</li>
+                <li>Томск</li>
+                <li>Новосибирск</li>
+                <li>Астана</li>
+            </ol>
+        </section>
+
+        <section id="dashboard" class="dashboard">
+            <h3 class="section-title">Статистика прогресса</h3>
+
+            <div class="dashboard-grid">
+
+                <article class="dash-card">
+                    <h4>Страны</h4>
+                    <p class="dash-value">12</p>
+                    <p class="dash-label">посещено</p>
+                </article>
+
+                <article class="dash-card">
+                    <h4>Города</h4>
+                    <p class="dash-value">34</p>
+                    <p class="dash-label">исследовано</p>
+                </article>
+
+                <article class="dash-card">
+                    <h4>Фото</h4>
+                    <p class="dash-value">1 250</p>
+                    <p class="dash-label">снимков</p>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="img-box">
+            <img src="images/traveler.png"
+                 width="220" height="280"
+                 alt="Фотография путешественника в горах">
+            <span class="badge" title="Любимое место">★</span>
+        </div>
+
+        <form id="form" class="form">
+            <label class="form-title">Форма для обратной связи</label>
+
+            <label for="user">Username</label>
+            <input type="text" id="user" name="username" placeholder="Иван" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="textarea_form">Message</label>
+            <textarea id="textarea_form" name="message" placeholder="Ваше сообщение"></textarea>
+
+            <button type="submit" style="font-size: 16px;">Отправить</button>
+        </form>
+
+    </main>
+
+    <aside id="city" class="city">
+        <span class="city-dot" aria-hidden="true">●</span>
+        <h2>Любимый город</h2>
+        <h3>Томск ^o^</h3>
+    </aside>
+
+    <footer class="footer">
+        <p>© 2026</p>
+    </footer>
+
+</body>
+</html>
