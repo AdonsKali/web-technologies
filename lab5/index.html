@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешественник — обо мне</title>
+
+    <!-- Внешний CSS (ЛР №2) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Внутренний <style>: ровно ОДНО правило — для «Проектов» (ЛР №2) -->
+    <style>
+        .projects {
+            column-count: 2;
+            column-gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== Sticky-навигация (ЛР №2 + №3) ===== -->
+    <nav class="nav">
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#dashboard">Статистика</a>
+        <a href="#form">Контакты</a>
+        <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Википедия</a>
+    </nav>
+
+    <header class="header">
+        <h1>Путешественник</h1>
+        <h2 class="static-h2">Деревянкин Ярослав Васильевич</h2>
+    </header>
+
+    <main class="main">
+        <section id="skills" class="skills-section">
+            <h3 class="section-title">Навыки и управление</h3>
+
+            <!-- КНОПКИ УПРАВЛЕНИЯ -->
+            <div class="skills-controls">
+                <button type="button" id="add-skill-btn" class="btn">Добавить навык</button>
+                <button type="button" id="clear-skills-btn" class="btn btn-danger">Очистить навыки</button>
+                
+                <!-- Эта кнопка теперь не будет скрываться -->
+                <button type="button" id="toggle-skills-btn" class="btn">Скрыть список навыков</button>
+                
+                <button type="button" id="theme-toggle" class="btn btn-theme">
+                    <span class="theme-label">Тёмная тема</span>
+                </button>
+            </div>
+
+            <!-- Оборачиваем список в div, который и будем скрывать -->
+            <div id="skills-list-wrapper">
+                <ul id="skills-list" class="skills-list">
+                    <li class="skill-item" data-name="Навигация">
+                        Навигация
+                        <button type="button" class="btn-remove">Удалить</button>
+                    </li>
+                    <li class="skill-item" data-name="Языки">
+                        Языки
+                        <button type="button" class="btn-remove">Удалить</button>
+                    </li>
+                    <li class="skill-item" data-name="Фотография">
+                        Фотография
+                        <button type="button" class="btn-remove">Удалить</button>
+                    </li>
+                    <li class="skill-item" data-name="Логистика">
+                        Логистика
+                        <button type="button" class="btn-remove">Удалить</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Секция «Проекты» (ЛР №2) -->
+        <section id="projects" class="projects">
+            <h3 class="section-title">Проекты</h3>
+            <ol>
+                <li>Каракол</li>
+                <li>Томск</li>
+                <li>Новосибирск</li>
+                <li>Астана</li>
+            </ol>
+        </section>
+
+        <!-- Grid-дашборд (ЛР №3) -->
+        <section id="dashboard" class="dashboard">
+            <h3 class="section-title">Статистика прогресса</h3>
+            <div class="dashboard-grid">
+                <article class="dash-card">
+                    <h4>Страны</h4>
+                    <p class="dash-value">12</p>
+                    <p class="dash-label">посещено</p>
+                </article>
+                <article class="dash-card">
+                    <h4>Города</h4>
+                    <p class="dash-value">34</p>
+                    <p class="dash-label">исследовано</p>
+                </article>
+                <article class="dash-card">
+                    <h4>Фото</h4>
+                    <p class="dash-value">1 250</p>
+                    <p class="dash-label">снимков</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Картинка (ЛР №2: relative + absolute) -->
+        <div class="img-box">
+            <img src="images/traveler.png" width="220" height="280" alt="Фотография путешественника в горах">
+            <span class="badge" title="Любимое место">★</span>
+        </div>
+
+        <!-- Форма (ЛР №2, inline font-size:16px) -->
+        <form id="form" class="form">
+            <label class="form-title">Форма для обратной связи</label>
+
+            <label for="user">Username</label>
+            <input type="text" id="user" name="username" placeholder="Иван" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="textarea_form">Message</label>
+            <textarea id="textarea_form" name="message" placeholder="Ваше сообщение"></textarea>
+
+            <button type="submit" style="font-size: 16px;">Отправить</button>
+        </form>
+
+    </main>
+
+    <aside id="city" class="city">
+        <span class="city-dot" aria-hidden="true">●</span>
+        <h2>Любимый город</h2>
+        <h3>Томск ^o^</h3>
+    </aside>
+
+    <footer class="footer">
+        <p>© 2026</p>
+    </footer>
+
+    <!-- ЛР №4 + ЛР №5 -->
+    <script src="script.js"></script>
+</body>
+
+</html>
