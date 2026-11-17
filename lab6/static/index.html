@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Часы — Онлайн</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/static/icons/icon-192.png">
+    <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+    <link rel="stylesheet" href="/static/styles.css">
+    <meta name="theme-color" content="#0f172a">
+</head>
+<body>
+    <header>
+        <h1>Часы и часовые пояса</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/about">О проекте</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <div id="clock" class="clock">--:--:--</div>
+            <div id="timezone" class="tz">Определяем часовой пояс…</div>
+
+            <label class="toggle">
+                <input type="checkbox" id="formatToggle">
+                <span>12-часовой формат (AM/PM)</span>
+            </label>
+
+            <div class="controls">
+                <button id="refreshBtn">Обновить</button>
+                <span id="status" class="status"></span>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

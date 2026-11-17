@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/static/styles.css">
+    <meta name="theme-color" content="#0f172a">
+</head>
+<body>
+    <header>
+        <h1>ℹ️ О проекте</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/about">О проекте</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <p>Это демонстрационное PWA-приложение «Часы и часовые пояса».</p>
+            <ul>
+                <li>FastAPI-бэкенд с маршрутом <code>/api/time</code></li>
+                <li>Query-параметр <code>?format=12</code> включает 12-часовой формат</li>
+                <li>Часовой пояс определяется на клиенте через <code>Intl.DateTimeFormat()</code></li>
+                <li>Service Worker кеширует статику — работает офлайн</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
