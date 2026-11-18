@@ -41,11 +41,16 @@ lab6/
 
 ## 🚀 Быстрый старт
 
+### Требования
+*1.Python*
+*2.Git*
+
 ### 1. Создать проект
 
 ```bash
-git clone https://github.com/AdonsKali/web-technologies/tree/932321-derevyankin-yaroslav-lab6
-cd lab6
+git clone --single-branch -b "932321-derevyankin-yaroslav-lab6" "https://github.com/AdonsKali/web-technologies"
+cd web-technologies
+сd lab6
 ```
 
 ### 2. Виртуальное окружение (рекомендуется)
