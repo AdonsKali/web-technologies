@@ -21,7 +21,7 @@
 ## 🗂️ Структура проекта
 
 ```
-project/
+lab6/
 ├── main.py                
 ├── requirements.txt      
 ├── README.md            
@@ -44,8 +44,6 @@ project/
 ### 1. Создать проект
 
 ```bash
-mkdir lab6
-# или 
 git clone https://github.com/AdonsKali/web-technologies/tree/932321-derevyankin-yaroslav-lab6
 cd lab6
 ```
@@ -66,7 +64,6 @@ pip install -r requirements.txt
 ### 4. Сгенерировать иконки (опционально)
 
 ```bash
-pip install pillow
 python generate_icons.py
 ```
 
@@ -191,24 +188,8 @@ console.log(data.time, data.format);
 
 ---
 
-## 📴 Как проверить офлайн-режим
-
-1. Откройте **http://localhost:8000**.
-2. Дождитесь регистрации SW:
-   **DevTools → Application → Service Workers** (статус `activated`).
-3. Перейдите на `/about` — страница тоже закешируется.
-4. Включите **Network → Offline**.
-5. Обновите страницу:
-   - страница открывается;
-   - часы показывают локальное время;
-   - `/api/time` возвращает заглушку `{"error": "Offline", "offline": true}` (503);
-   - в интерфейсе статус «Офлайн — локальное время».
-
----
-
 ## 📱 Установка как PWA
 
 - **Desktop (Chrome/Edge):** иконка «Установить» в адресной строке.
 - **Android (Chrome):** меню → «Установить приложение».
-- **iOS (Safari):** «Поделиться» → «На экран "Домой"».
 
