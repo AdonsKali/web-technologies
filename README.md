@@ -48,7 +48,7 @@ cd lab7
 python -m venv .venv
 
 # Windows
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 ### 3. Установить зависимости
